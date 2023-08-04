@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joke</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+        body{
+            background: rgba(8, 5, 21, 0.909);
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+            padding: 10%;
+        }
+        .mainbox{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            gap: 20px;
+            align-content: center;
+            background-color: rgb(50, 73, 73);
+            border-radius: 10px;
+            padding: 2% 10%;
+        }
+        .button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        #yesbtn{
+            color: rgb(255, 255, 255);
+            background-color: rgb(79, 202, 79);
+            border-radius: 5px;
+            border: none;
+            padding: 4%;
+            cursor: pointer;
+        }
+        #nobtn{
+            color: rgb(255, 255, 255);
+            background-color: rgb(246, 61, 19);
+            border-radius: 5px;
+            border: none;
+            padding: 4%;
+            cursor: pointer;
+        }
+        #display{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            width: 25rem;
+            height: 8rem;
+            border: .2px solid white;
+            border-radius: 10px;
+            background-color: black;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Jokes for the Soul</h2>
+      <div class="mainbox">
+        <h3>You want jokes?</h3>
+        <div class="button">
+          <button id="yesbtn">Yes</button>
+          <button id="nobtn">No</button>
+          <audio id="yes" src="audio1.mp3"></audio>
+          <audio id="no" src="audio2.mp3"></audio>
+        </div>
+      </div>
+      <div id="display"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
